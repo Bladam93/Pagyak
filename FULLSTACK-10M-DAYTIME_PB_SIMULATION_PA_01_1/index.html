@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>thermostat</title>
+    <link rel="stylesheet" href="static/thermostat.css">
+    <link rel="stylesheet" href="static/on-off-button.css">
+</head>
+
+<body>
+<div id="thermostat-container">
+    <div id="thermostat">
+        <div id="newFunction">
+            <button>+</button>
+            <span id="middle">1°C</span>
+            <button>-</button>            
+        </div>
+        <div id="thermostat-button-container">
+            <div class="toggle-btn" id="on-off-toggle-btn">
+                <label for="on-off-toggle-btn-input"></label>
+                <input id="on-off-toggle-btn-input" type="checkbox" value="off">
+                <span></span>
+            </div>
+        </div>
+        <div id="thermostat-settings-container">
+            <div class="thermostat-settings-buttons">
+                <button id="decrease-temperature-button" class="temperature-button">-</button>
+            </div>
+            <div id="thermostat-panel">
+                <div class="temperature-text-container">
+                    <div class="temperature-text-row">
+                        <span class="temperature-text set-temperature-text">Set:</span>
+                        <span id="set-temperature-num" class="temperature-text">--</span>
+                        <span class="temperature-text set-temperature-text">°C</span>
+                    </div>
+                    <div class="temperature-text-row">
+                        <span class="temperature-text">Room:</span>
+                        <span id="temperature-num" class="temperature-text">--</span>
+                        <span class="temperature-text">°C</span>
+                    </div>
+                </div>
+            </div>
+            <div class="thermostat-settings-buttons">
+                <button id="increase-temperature-button" class="temperature-button">+</button>
+            </div>
+        </div>
+        <div id="thermostat-title-container">
+            <h1 id="thermostat-title">CodeCooler Thermostat</h1>
+        </div>
+    </div>
+</div>
+<script type="module" src="js/init.js" defer></script>
+<script type="module" src="js/thermostat.js" defer></script>
+</body>
+</html>

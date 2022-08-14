@@ -1,0 +1,116 @@
+html,
+body {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+#thermostat-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+#thermostat {
+    height: 75%;
+    width: 75%;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    background-color: lightgrey;
+    box-shadow: 5px 5px #888888;
+}
+
+#thermostat-panel {
+    /*margin-left: 5%;*/
+    width: 60%;
+    background-color: dimgray;
+    box-shadow: 5px 5px #888888;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.temperature-text-container {
+    align-items: center;
+    vertical-align: middle;
+}
+
+.temperature-text-row {
+    display: flex;
+    justify-content: center;
+}
+
+.temperature-text {
+    font-size: 4em;
+    text-align: center;
+    font-family: "Courier New", serif;
+}
+
+.set-temperature-text {
+    font-size: 3rem;
+}
+
+#temperature-num {
+    font-size: 4rem;
+}
+
+#set-temperature-num {
+    font-size: 3rem;
+}
+
+#thermostat-settings-buttons {
+    width: 15%;
+}
+
+#thermostat-settings-container {
+    width: 100%;
+    height: 65%;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+.temperature-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 5em;
+    width: 10vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    box-shadow: 5px 5px #888888;
+
+}
+
+.temperature-button:hover {
+    background-color: rgb(185, 185, 185);
+    transition: 0.4s;
+}
+
+.thermostat-settings-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#thermostat-title {
+    font-size: 3em;
+    margin-left: 3%;
+    font-family: "Lucida Handwriting", serif;
+    text-shadow: 2px 2px #888888;
+}
+
+
+#newFunction {
+    text-align: right; 
+    
+}
